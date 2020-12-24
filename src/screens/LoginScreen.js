@@ -49,8 +49,7 @@ const LoginScreen = ({ navigation }) => {
 
       <Logo />
 
-      <Header>Welcome back.</Header>
-
+   
       <TextInput
         label="Email"
         returnKeyType="next"
@@ -75,14 +74,8 @@ const LoginScreen = ({ navigation }) => {
         autoCapitalize="none"
       />
 
-      <View style={styles.forgotPassword}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("ForgotPasswordScreen")}
-        >
-          <Text style={styles.label}>Forgot your password?</Text>
-        </TouchableOpacity>
-      </View>
-
+     
+     
       <Button loading={loading} mode="contained" onPress={_onLoginPressed}>
         Login
       </Button>
